@@ -26,6 +26,23 @@ a{color:inherit}
 }
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:5px;background:linear-gradient(90deg,var(--gold),#fff,var(--green))}
 .hero-inner{max-width:1250px;width:100%;margin:auto}
+.cerimonial-identification{
+  display:flex;flex-direction:column;align-items:flex-start;gap:4px;
+  margin-bottom:24px;text-shadow:0 2px 8px rgba(0,0,0,.45)
+}
+.cerimonial-identification img{
+  width:78px;height:78px;object-fit:contain;display:block;
+  mix-blend-mode:multiply;
+  filter:drop-shadow(0 2px 5px rgba(0,0,0,.35))
+}
+.cerimonial-identification strong{
+  font-size:clamp(17px,2vw,21px);font-weight:900;letter-spacing:.12em
+}
+.cerimonial-identification p{
+  font-size:clamp(11px,1.2vw,14px);font-weight:600;letter-spacing:.035em;
+  margin:0;max-width:480px;line-height:1.35
+}
+
 .kicker{font-size:clamp(15px,2vw,22px);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .hero h1{font-size:clamp(44px,8vw,88px);margin:7px 0 10px;font-weight:900;line-height:.9;letter-spacing:-.04em}
 .hero p{font-size:clamp(16px,2vw,20px);margin:0;max-width:700px;line-height:1.5}
@@ -111,6 +128,11 @@ footer{background:var(--navy);color:#fff;padding:30px 6%;text-align:center}
 <body>
 <section class="hero">
   <div class="hero-inner">
+    <div class="cerimonial-identification" aria-label="Identificação institucional do Cerimonial">
+      <img src="https://cdn1.rondoniagora.com/uploads/noticias/2018/04/18/5ad757db69ef4.jpg" alt="Brasão de Armas do Estado de Rondônia">
+      <strong>CERIMONIAL</strong>
+      <p>Departamento de Relações Públicas e Cerimonial</p>
+    </div>
     <div class="kicker">📍 Guia Digital</div>
     <h1>RONDÔNIA</h1>
     <p>Restaurantes, hotéis e informações úteis para descobrir diferentes localidades do estado.</p>
